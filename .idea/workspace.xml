@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f2601d8a-4d83-4b6f-8086-2fa2ee4e5d60" name="Default Changelist" comment="">
+    <list default="true" id="f2601d8a-4d83-4b6f-8086-2fa2ee4e5d60" name="Default Changelist" comment="edit README.md">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,11 +77,20 @@
       <screen x="0" y="23" width="1440" height="823" />
     </state>
     <state x="320" y="99" key="#Notifications/0.23.1440.823@0.23.1440.823" timestamp="1589182655690" />
-    <state x="299" y="17" key="CommitChangelistDialog2" timestamp="1589183355091">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state x="224" y="36" key="CommitChangelistDialog2" timestamp="1589184389513">
+      <screen x="0" y="23" width="1440" height="822" />
     </state>
     <state x="299" y="17" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1589183355091" />
+    <state x="224" y="36" key="CommitChangelistDialog2/0.23.1440.822@0.23.1440.822" timestamp="1589184389513" />
     <state x="224" y="36" key="CommitChangelistDialog2/0.23.1440.823@0.23.1440.823" timestamp="1589181961824" />
+    <state x="100" y="123" width="1240" height="622" key="DiffContextDialog" timestamp="1589184382346">
+      <screen x="0" y="23" width="1440" height="822" />
+    </state>
+    <state x="100" y="123" width="1240" height="622" key="DiffContextDialog/0.23.1440.822@0.23.1440.822" timestamp="1589184382346" />
+    <state x="431" y="157" key="MultipleFileMergeDialog" timestamp="1589184425243">
+      <screen x="0" y="23" width="1440" height="822" />
+    </state>
+    <state x="431" y="157" key="MultipleFileMergeDialog/0.23.1440.822@0.23.1440.822" timestamp="1589184425243" />
     <state x="461" y="167" key="SettingsEditor" timestamp="1589183700640">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -95,9 +104,10 @@
       <screen x="0" y="23" width="1440" height="822" />
     </state>
     <state x="397" y="266" key="com.intellij.ide.util.TipDialog/0.23.1440.822@0.23.1440.822" timestamp="1589181010099" />
-    <state x="503" y="358" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589182930073">
-      <screen x="0" y="23" width="1440" height="823" />
+    <state x="503" y="358" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589184412944">
+      <screen x="0" y="23" width="1440" height="822" />
     </state>
+    <state x="503" y="358" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.822@0.23.1440.822" timestamp="1589184412944" />
     <state x="503" y="358" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.823@0.23.1440.823" timestamp="1589182930073" />
     <state x="97" y="48" key="new project wizard" timestamp="1589182463035">
       <screen x="0" y="23" width="1440" height="823" />
