@@ -1,2 +1,2 @@
-# Top-Up-eWallet-DANA-Debrief-1
+# Top Up eWallet Project
 This is repository for Automation Testing by SDET FE team in DANApprentech.
