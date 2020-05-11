@@ -6,3 +6,5 @@ test edit by asus
 ganteng amat
 
 test1
+
+asus ganteng banget
