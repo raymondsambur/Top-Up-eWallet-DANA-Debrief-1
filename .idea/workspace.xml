@@ -37,6 +37,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -56,25 +57,39 @@
       <option name="project" value="LOCAL" />
       <updated>1589181962016</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="edit README.md">
+      <created>1589183356064</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1589183356064</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Create directory and files need for development." />
-    <option name="LAST_COMMIT_MESSAGE" value="Create directory and files need for development." />
+    <MESSAGE value="edit README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit README.md" />
   </component>
   <component name="WindowStateProjectService">
     <state x="320" y="99" key="#Notifications" timestamp="1589182655690">
       <screen x="0" y="23" width="1440" height="823" />
     </state>
     <state x="320" y="99" key="#Notifications/0.23.1440.823@0.23.1440.823" timestamp="1589182655690" />
-    <state x="224" y="36" key="CommitChangelistDialog2" timestamp="1589181961824">
-      <screen x="0" y="23" width="1440" height="823" />
+    <state x="299" y="17" key="CommitChangelistDialog2" timestamp="1589183355091">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
+    <state x="299" y="17" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1589183355091" />
     <state x="224" y="36" key="CommitChangelistDialog2/0.23.1440.823@0.23.1440.823" timestamp="1589181961824" />
-    <state x="320" y="174" key="Vcs.Push.Dialog.v2" timestamp="1589181964145">
-      <screen x="0" y="23" width="1440" height="823" />
+    <state x="461" y="167" key="SettingsEditor" timestamp="1589183700640">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
+    <state x="461" y="167" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1589183700640" />
+    <state x="427" y="193" key="Vcs.Push.Dialog.v2" timestamp="1589183374632">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="427" y="193" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1589183374632" />
     <state x="320" y="174" key="Vcs.Push.Dialog.v2/0.23.1440.823@0.23.1440.823" timestamp="1589181964145" />
     <state x="397" y="266" key="com.intellij.ide.util.TipDialog" timestamp="1589181010099">
       <screen x="0" y="23" width="1440" height="822" />
