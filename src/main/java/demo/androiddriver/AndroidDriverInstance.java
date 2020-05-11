@@ -20,6 +20,7 @@ public class AndroidDriverInstance {
         caps.setCapability("platformVersion", "8.1.0");
         caps.setCapability("deviceName", "device");
         caps.setCapability("udid", "emulator-5554");
+        caps.setCapability("autoGrantPermissions", true);
         caps.setCapability("app", "/Users/hendrione/Code/SampleSelenium/APP/TodoApp.apk");
         caps.setCapability("automationName", "UiAutomator2");
         try {
