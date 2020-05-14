@@ -15,4 +15,12 @@ public interface RegisterLocator {
     By BUTTON_REGISTER = MobileBy.id("buttonRegister");
     By BUTTON_BACK = MobileBy.id("back_button_sign_up");
 
+    //Error Message
+    By LABEL_ERROR_FIRST_NAME = MobileBy.xpath("//android.widget.LinearLayout[1]/android.widget.LinearLayout[1]//android.widget.TextView");
+    By LABEL_ERROR_LAST_NAME = MobileBy.xpath("//android.widget.LinearLayout[2]/android.widget.LinearLayout[1]//android.widget.TextView");
+    By LABEL_ERROR_EMAIL = MobileBy.xpath("//android.widget.LinearLayout[3]/android.widget.LinearLayout[1]//android.widget.TextView");
+    By LABEL_ERROR_PHONE_NUMBER = MobileBy.xpath("//android.widget.LinearLayout[4]/android.widget.LinearLayout[1]//android.widget.TextView");
+    By LABEL_ERROR_PASSWORD = MobileBy.xpath("//android.widget.LinearLayout[5]/android.widget.LinearLayout[1]//android.widget.TextView");
+    By LABEL_ERROR_RETYPE_PASSWORD = MobileBy.xpath("//android.widget.LinearLayout[6]/android.widget.LinearLayout[1]//android.widget.TextView");
+
 }
