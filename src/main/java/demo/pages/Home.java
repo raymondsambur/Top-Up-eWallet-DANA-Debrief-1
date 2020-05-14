@@ -11,4 +11,8 @@ public class Home implements HomeTopUpLocator {
         WebDriverWait wait = new WebDriverWait(androidDriver, 30);
         return wait.until(ExpectedConditions.presenceOfElementLocated(LABEL_NAME)).isDisplayed();
     }
+
+    public void clickUserInformation(){
+        androidDriver.findElement(BUTTON_USER_INFORMATION).click();
+    }
 }
