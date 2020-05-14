@@ -14,7 +14,7 @@ public class AndroidDriverInstance {
     public static AndroidDriver<AndroidElement> androidDriver;
 
     public static void initialize() {
-        String appiumUrl = "http://127.0.0.1:4723";
+        String appiumUrl = "http://127.0.0.1:4723/wd/hub";
         DesiredCapabilities caps = new DesiredCapabilities();
         caps.setCapability("platformName", "Android");
         caps.setCapability("platformVersion", "8.1.0");

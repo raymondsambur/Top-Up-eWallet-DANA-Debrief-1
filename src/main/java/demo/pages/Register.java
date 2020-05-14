@@ -29,7 +29,7 @@ public class Register implements RegisterLocator {
     }
 
     public void inputPhoneNumber(String phoneNumber) {
-        androidDriver.findElement(TEXT_FIELD_EMAIL).sendKeys(phoneNumber);
+        androidDriver.findElement(TEXT_FIELD_PHONE_NUMBER).sendKeys(phoneNumber);
     }
 
     public void inputPassword(String password) {
