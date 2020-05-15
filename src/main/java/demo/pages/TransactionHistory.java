@@ -1,4 +1,6 @@
 package demo.pages;
 
-public class TransactionHistory {
+import demo.locators.TransactionHistoryLocator;
+
+public class TransactionHistory implements TransactionHistoryLocator {
 }

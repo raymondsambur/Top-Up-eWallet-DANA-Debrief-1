@@ -14,7 +14,7 @@ public class UserInformationStepDefinition {
 
     @When("User click user information")
     public void userClickUserInformation() {
-        home.clickUserInformation();
+        home.clickUserInformationButton();
     }
 
     @Then("User is on User Information Page")
