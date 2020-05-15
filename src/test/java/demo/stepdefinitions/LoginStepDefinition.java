@@ -40,4 +40,10 @@ public class LoginStepDefinition {
         boolean actual = home.isOnHomePage();
         Assert.assertTrue(actual);
     }
+
+    @Then("User See Error Message for Empty Field")
+    public void userSeeErrorMessageForEmptyField() {
+        String text = login.errorMessageFieldEmpty();
+        Assert.assertTrue(text.contains("Username/Password is empty"));
+    }
 }

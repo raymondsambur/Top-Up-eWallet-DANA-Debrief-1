@@ -10,5 +10,5 @@ public interface LoginLocator {
     By TEXT_FIELD_PASSWORD = MobileBy.id("inputPassword");
     By BUTTON_LOGIN = MobileBy.id("btnLogin");
     By BUTTON_REGISTRATION = MobileBy.id("textRegister");
-
+    By TOAST_ERROR_MESSAGE = MobileBy.xpath("//android.widget.Toast[1]");
 }
