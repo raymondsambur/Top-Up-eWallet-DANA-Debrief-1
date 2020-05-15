@@ -45,4 +45,8 @@ public class TopUp implements TopUpLocator {
         androidDriver.findElement(BUTTON_BACK).click();
     }
 
+    public void chooseNominal(String nominal){
+
+    }
+
 }

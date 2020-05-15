@@ -1,5 +1,5 @@
 @Android @Registration
-  Feature: Check Registration Main Features
+  Feature: Registration
 
     @RegisterValid
     Scenario: Verify Register as New User
@@ -8,8 +8,8 @@
       And User Is On Register Page
       When User Input "John" as First Name
       And User Input "Cena" as Last Name
-      And User Input "raymondsambur@gmail.com" as Email
-      And User Input "6282189814330" as Phone Number
+      And User Input "rayjhonathan97@gmail.com" as Email
+      And User Input "6285155208864" as Phone Number
       And User Input "Rahasia123!" as Password
       And User Input "Rahasia123!" as Retype Password
       And User Click Register On Register Page
