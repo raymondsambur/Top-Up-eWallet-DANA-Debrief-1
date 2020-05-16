@@ -1,5 +1,6 @@
 package demo.pages;
 
+import demo.functions.PageFunctions;
 import demo.locators.VerificationLocator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -10,12 +11,14 @@ import static demo.androiddriver.AndroidDriverInstance.androidDriver;
 
 public class Verification implements VerificationLocator {
 
+    PageFunctions pageFunctions = new PageFunctions();
+
     public boolean openVerificationPage() {
-        return waitABit(LABEL_TITLE_VERIFICATION).isDisplayed();
+        return pageFunctions.waitABit(LABEL_TITLE_VERIFICATION).isDisplayed();
     }
 
     public void inputOTPCode(String otp){
-        waitABit(TEXT_FIELD_OTP).sendKeys(otp);
+        pageFunctions.waitABit(TEXT_FIELD_OTP).sendKeys(otp);
     }
 
     public void clickProceedButton(){
@@ -27,16 +30,12 @@ public class Verification implements VerificationLocator {
     }
 
     public String getTimer(){
-        return waitABit(LABEL_TIMER).getText();
+        return pageFunctions.waitABit(LABEL_TIMER).getText();
     }
 
     public String getPhoneEmail(){
-        return waitABit(LABEL_PHONE_EMAIL).getText();
+        return pageFunctions.waitABit(LABEL_PHONE_EMAIL).getText();
     }
 
-    public WebElement waitABit(By element) {
-        WebDriverWait wait = new WebDriverWait(androidDriver, 30);
-        return wait.until(ExpectedConditions.presenceOfElementLocated(element));
-    }
 
 }

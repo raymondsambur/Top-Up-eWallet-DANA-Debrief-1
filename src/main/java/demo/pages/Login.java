@@ -1,5 +1,6 @@
 package demo.pages;
 
+import demo.functions.PageFunctions;
 import demo.locators.LoginLocator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -10,8 +11,10 @@ import static demo.androiddriver.AndroidDriverInstance.androidDriver;
 
 public class Login implements LoginLocator {
 
+    PageFunctions pageFunctions = new PageFunctions();
+
     public boolean isOnLoginPage(){
-        return waitABit(LABEL_TITLE_LOGIN);
+        return pageFunctions.waitABit(LABEL_TITLE_LOGIN).isDisplayed();
     }
 
     public void clickRegisterButton() {
@@ -33,11 +36,6 @@ public class Login implements LoginLocator {
     public String errorMessageFieldEmpty(){
         WebElement errorMessage = androidDriver.findElement(TOAST_ERROR_MESSAGE);
         return errorMessage.getAttribute("name");
-    }
-
-    public boolean waitABit(By element) {
-        WebDriverWait wait = new WebDriverWait(androidDriver, 30);
-        return wait.until(ExpectedConditions.presenceOfElementLocated(element)).isDisplayed();
     }
 
 }

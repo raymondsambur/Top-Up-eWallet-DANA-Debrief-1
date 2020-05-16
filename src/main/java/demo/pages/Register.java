@@ -1,5 +1,6 @@
 package demo.pages;
 
+import demo.functions.PageFunctions;
 import demo.locators.RegisterLocator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -10,8 +11,10 @@ import static demo.androiddriver.AndroidDriverInstance.androidDriver;
 
 public class Register implements RegisterLocator {
 
+    PageFunctions pageFunctions = new PageFunctions();
+
     public boolean openRegisterPage() {
-        return waitABit(LABEL_TITLE_REGISTRATION);
+        return pageFunctions.waitABit(LABEL_TITLE_REGISTRATION).isDisplayed();
     }
 
     public void inputFirstName(String firstName) {
@@ -47,32 +50,27 @@ public class Register implements RegisterLocator {
     }
 
     public boolean errorMessageFirstName() {
-        return waitABit(LABEL_ERROR_FIRST_NAME);
+        return pageFunctions.waitABit(LABEL_ERROR_FIRST_NAME).isDisplayed();
     }
 
     public boolean errorMessageLastName() {
-        return waitABit(LABEL_ERROR_LAST_NAME);
+        return pageFunctions.waitABit(LABEL_ERROR_LAST_NAME).isDisplayed();
     }
 
     public boolean errorMessageEmail() {
-        return waitABit(LABEL_ERROR_EMAIL);
+        return pageFunctions.waitABit(LABEL_ERROR_EMAIL).isDisplayed();
     }
 
     public boolean errorMessagePhoneNumber() {
-        return waitABit(LABEL_ERROR_PHONE_NUMBER);
+        return pageFunctions.waitABit(LABEL_ERROR_PHONE_NUMBER).isDisplayed();
     }
 
     public boolean errorMessagePassword() {
-        return waitABit(LABEL_ERROR_PASSWORD);
+        return pageFunctions.waitABit(LABEL_ERROR_PASSWORD).isDisplayed();
     }
 
     public boolean errorMessageRetypePassword() {
-        return waitABit(LABEL_ERROR_RETYPE_PASSWORD);
-    }
-
-    public boolean waitABit(By element) {
-        WebDriverWait wait = new WebDriverWait(androidDriver, 30);
-        return wait.until(ExpectedConditions.presenceOfElementLocated(element)).isDisplayed();
+        return pageFunctions.waitABit(LABEL_ERROR_RETYPE_PASSWORD).isDisplayed();
     }
 
 }

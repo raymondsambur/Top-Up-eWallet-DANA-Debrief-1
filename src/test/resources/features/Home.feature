@@ -14,7 +14,7 @@
       Then User is on Top Up Page
 
     @VerifyHomeButton
-    Scenario: Verify Home button funtionality
+    Scenario: Verify Home button functionality
       When User click Home button on Home Page
       Then User is on Home Page
 

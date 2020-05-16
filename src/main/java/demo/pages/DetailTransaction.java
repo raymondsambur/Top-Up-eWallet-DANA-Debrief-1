@@ -1,5 +1,6 @@
 package demo.pages;
 
+import demo.functions.PageFunctions;
 import demo.locators.DetailTransactionLocator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -9,8 +10,10 @@ import static demo.androiddriver.AndroidDriverInstance.androidDriver;
 
 public class DetailTransaction implements DetailTransactionLocator {
 
+    PageFunctions pageFunctions = new PageFunctions();
+
     public boolean isOnDetailTransactionPage() {
-        return waitABit(LABEL_TITLE_DETAIL_TRANSACTION);
+        return pageFunctions.waitABit(LABEL_TITLE_DETAIL_TRANSACTION).isDisplayed();
     }
 
     public void clickBackButton() {
@@ -30,15 +33,15 @@ public class DetailTransaction implements DetailTransactionLocator {
     }
 
     public boolean isOnQRCodePage(){
-        return waitABit(LABEL_TITLE_QR);
+        return pageFunctions.waitABit(LABEL_TITLE_QR).isDisplayed();
     }
 
     public boolean checkUsername(){
-        return waitABit(LABEL_USERNAME);
+        return pageFunctions.waitABit(LABEL_USERNAME).isDisplayed();
     }
 
     public boolean checkQRImage(){
-        return waitABit(IMAGE_QR_CODE);
+        return pageFunctions.waitABit(IMAGE_QR_CODE).isDisplayed();
     }
 
     public void clickBackQR(){
@@ -46,7 +49,7 @@ public class DetailTransaction implements DetailTransactionLocator {
     }
 
     public boolean isOnReceiptPage(){
-        return waitABit(LABEL_TITLE_UPLOAD_RECEIPT);
+        return pageFunctions.waitABit(LABEL_TITLE_UPLOAD_RECEIPT).isDisplayed();
     }
 
     public void clickUploadReceiptBackButton(){
@@ -79,11 +82,6 @@ public class DetailTransaction implements DetailTransactionLocator {
 
     public void clickChooseFileCancelButton(){
         androidDriver.findElement(BUTTON_CHOOSE_FILE_CANCEL);
-    }
-
-    public boolean waitABit(By element) {
-        WebDriverWait wait = new WebDriverWait(androidDriver, 30);
-        return wait.until(ExpectedConditions.presenceOfElementLocated(element)).isDisplayed();
     }
 
 }

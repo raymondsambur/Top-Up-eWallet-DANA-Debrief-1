@@ -1,5 +1,6 @@
 package demo.pages;
 
+import demo.functions.PageFunctions;
 import demo.locators.TransactionHistoryLocator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -10,8 +11,10 @@ import static demo.androiddriver.AndroidDriverInstance.androidDriver;
 
 public class TransactionHistory implements TransactionHistoryLocator {
 
+    PageFunctions pageFunctions = new PageFunctions();
+
     public boolean isOnTransactionHistoryPage(){
-        return waitABit(LABEL_TITLE_TRANSACTION_HISTORY).isDisplayed();
+        return pageFunctions.waitABit(LABEL_TITLE_TRANSACTION_HISTORY).isDisplayed();
     }
 
     public void clickTabInProgressButton(){
@@ -23,14 +26,8 @@ public class TransactionHistory implements TransactionHistoryLocator {
     }
 
     public boolean getImageNoTransaction(){
-        return waitABit(IMAGE_NO_TRANSACTION).isDisplayed();
+        return pageFunctions.waitABit(IMAGE_NO_TRANSACTION).isDisplayed();
     }
 
-
-
-    public WebElement waitABit(By element) {
-        WebDriverWait wait = new WebDriverWait(androidDriver, 30);
-        return wait.until(ExpectedConditions.presenceOfElementLocated(element));
-    }
 
 }

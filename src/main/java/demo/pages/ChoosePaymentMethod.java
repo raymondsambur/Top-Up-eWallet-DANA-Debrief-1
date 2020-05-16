@@ -1,5 +1,6 @@
 package demo.pages;
 
+import demo.functions.PageFunctions;
 import demo.locators.ChoosePaymentMethodLocator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -9,14 +10,14 @@ import static demo.androiddriver.AndroidDriverInstance.androidDriver;
 
 public class ChoosePaymentMethod implements ChoosePaymentMethodLocator {
 
+    PageFunctions pageFunctions = new PageFunctions();
+
     public boolean isOnChoosePaymentMethod(){
-        WebDriverWait wait = new WebDriverWait(androidDriver, 30);
-        return wait.until(ExpectedConditions.presenceOfElementLocated(LABEL_TITLE_CHOOSE_PAYMENT_TYPE)).isDisplayed();
+        return pageFunctions.waitABit(LABEL_TITLE_CHOOSE_PAYMENT_TYPE).isDisplayed();
     }
 
     public boolean isOnPopUpPurchaseDetail(){
-        WebDriverWait wait = new WebDriverWait(androidDriver, 30);
-        return wait.until(ExpectedConditions.presenceOfElementLocated(LABEL_TITLE_PURCHASE_DETAIL)).isDisplayed();
+        return  pageFunctions.waitABit(LABEL_TITLE_PURCHASE_DETAIL).isDisplayed();
     }
 
     public void clickPaymentMethodButton(String paymentMethod){
