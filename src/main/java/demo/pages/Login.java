@@ -33,7 +33,7 @@ public class Login implements LoginLocator {
         androidDriver.findElement(BUTTON_LOGIN).click();
     }
 
-    public String errorMessageFieldEmpty(){
+    public String errorMessageInvalid(){
         WebElement errorMessage = androidDriver.findElement(TOAST_ERROR_MESSAGE);
         return errorMessage.getAttribute("name");
     }

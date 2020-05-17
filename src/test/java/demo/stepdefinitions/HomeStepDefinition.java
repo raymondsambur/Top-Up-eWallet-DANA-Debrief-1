@@ -12,7 +12,6 @@ public class HomeStepDefinition {
 
     Home home = new Home();
     TopUp topUp = new TopUp();
-    UserInformation userInformation = new UserInformation();
     TransactionHistory transactionHistory = new TransactionHistory();
 
     @When("User click Top Up button on Home Page")

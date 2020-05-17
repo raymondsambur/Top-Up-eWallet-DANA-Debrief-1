@@ -13,8 +13,8 @@ public class TopUpStepDefinition {
     TopUp topUp = new TopUp();
     ChoosePaymentMethod choosePaymentMethod = new ChoosePaymentMethod();
 
-    @When("User click {string} as Top Up amount")
-    public void userClickAsTopUpAmount(String amount) {
+    @When("User input {string} as Top Up amount")
+    public void userInputAsTopUpAmount(String amount) {
         topUp.chooseNominal(amount);
     }
 

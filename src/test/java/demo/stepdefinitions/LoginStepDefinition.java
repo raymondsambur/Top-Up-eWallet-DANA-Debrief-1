@@ -41,10 +41,15 @@ public class LoginStepDefinition {
         Assert.assertTrue(actual);
     }
 
-    @Then("User See Error Message for Empty Field")
-    public void userSeeErrorMessageForEmptyField() {
-        String text = login.errorMessageFieldEmpty();
-        Assert.assertTrue(text.contains("Username/Password is empty"));
+    @Then("User See Error Message for Invalid Username or Password")
+    public void userSeeErrorMessageForInvalidUsernameOrPassword() {
+        String text = login.errorMessageInvalid();
+        Assert.assertTrue(text.contains("Unauthorized"));
     }
 
+    @Then("User See Error Message for Empty Field")
+    public void userSeeErrorMessageForEmptyField() {
+        String text = login.errorMessageInvalid();
+        Assert.assertTrue(text.contains("Username/Password"));
+    }
 }

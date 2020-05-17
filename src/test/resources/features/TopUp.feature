@@ -3,8 +3,8 @@ Feature: Top Up
 
   Background:
     Given User is on Login Page
-    And User input phone "6288245593542" on phone form
-    And User input password "Pass-123" on password form
+    And User input phone "6282189814330" on phone form
+    And User input password "Rahasia123!" on password form
     And User click signIn button
     And User is on Home Page
     And User click Top Up button on Home Page
@@ -12,7 +12,7 @@ Feature: Top Up
   @SelectTopUpAmount
   Scenario Outline: User choose Top Up amounts
     When User is on Top Up Page
-    And User click "<Nominal>" as Top Up amount
+    And User input "<Nominal>" as Top Up amount
     And User click Select Payment Method button on Top Up Page
     Then User is on Choose Payment Method Page
     Examples:

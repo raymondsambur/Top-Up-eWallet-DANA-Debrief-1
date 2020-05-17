@@ -7,6 +7,8 @@ public interface DetailTransactionLocator {
 
     By LABEL_TITLE_DETAIL_TRANSACTION = MobileBy.xpath("//android.widget.TextView[@text='Detail Transaction']");
     By BUTTON_BACK = MobileBy.xpath("//android.widget.ImageButton");
+    By BUTTON_LEAVE_NO = MobileBy.id("button2");
+    By BUTTON_LEAVE_YES = MobileBy.id("button1");
 
     //Payment Information
     By LABEL_BALANCE_AMOUNT = MobileBy.id("tv_balance");
