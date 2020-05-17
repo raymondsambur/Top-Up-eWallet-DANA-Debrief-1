@@ -1,9 +1,13 @@
 package demo.stepdefinitions;
 
+import com.google.zxing.NotFoundException;
 import demo.pages.DetailTransaction;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import org.junit.Assert;
+
+import java.io.IOException;
 
 public class DetailTransactionStepDefinition {
     DetailTransaction detailTransaction = new DetailTransaction();
@@ -78,5 +82,31 @@ public class DetailTransactionStepDefinition {
     public void userIsOnConfirmUploadReceipt() {
         Assert.assertTrue(detailTransaction.isOnReceiptPage());
 
+    }
+
+    @When("User is on QR Code Page")
+    public void userIsOnQRCodePage() {
+        detailTransaction.isOnQRCodePage();
+    }
+
+    @And("User see User Name on QR Code Page")
+    public void userSeeUserNameOnQRCodePage() {
+        Assert.assertTrue(detailTransaction.checkUsername());
+    }
+
+    @And("User see QR Code Image")
+    public void userSeeQRCodeImage() {
+        Assert.assertTrue(detailTransaction.checkQRImage());
+    }
+
+    @Then("User scan the QR Code")
+    public void userScanTheQRCode() throws IOException, NotFoundException {
+        String content = detailTransaction.readQRCode();
+        System.out.println(content);
+    }
+
+    @And("User click Back Button On QR Code Page")
+    public void userClickBackButtonOnQRCodePage() {
+        detailTransaction.clickBackQR();
     }
 }

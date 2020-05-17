@@ -45,3 +45,19 @@
       And User click confirm button on pop up message confirmation
       Then User is on Detail Transaction Page
 
+    @VerifyTransactionWithMerchantQRCode
+    Scenario: Verify transaction using Bank with upload receipt take from camera
+      Given User is on Top Up Page
+      And User input "10.000" as Top Up amount
+      And User click Select Payment Method button on Top Up Page
+      And User is on Choose Payment Method Page
+      And User is on Choose Payment Method Page
+      And User choose "Indomaret" as Payment Method
+      And User click Pay button on Choose Payment Type Page
+      When User click confirm button on Detail Transaction Page
+      And User is on QR Code Page
+      And User see User Name on QR Code Page
+      And User see QR Code Image
+      Then User scan the QR Code
+      And User click Back Button On QR Code Page
+      And User is on Detail Transaction Page
