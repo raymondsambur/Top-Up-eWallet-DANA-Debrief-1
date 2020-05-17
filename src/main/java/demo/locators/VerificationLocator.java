@@ -12,4 +12,9 @@ public interface VerificationLocator {
     By LABEL_TIMER = MobileBy.id("tv_timer");
     By LABEL_PHONE_EMAIL = MobileBy.id("tv_email_phone");
 
+    //Email Verification Page
+    By LABEL_TITLE_FORGOT_PASSWORD = MobileBy.id("forgotPasswordTitle");
+    By TEXT_FIELD_EMAIL = MobileBy.id("inputEmailForgotPassword");
+    By BUTTON_VERIFY = MobileBy.id("buttonVerifyEmailForPassword");
+
 }

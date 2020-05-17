@@ -17,7 +17,7 @@ Feature: Choose Payment Method
     When User is on Choose Payment Method Page
     And User choose "<PaymentName>" as Payment Method
     And User see Purchase Pop Up
-    And User see top up amount of "10.000"
+    And User see top up amount of "Rp.10.000"
     And User see "<PaymentName>" as Payment Name
     And User click Pay button on Choose Payment Type Page
     Then User is on Detail Transaction Page

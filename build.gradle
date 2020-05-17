@@ -41,6 +41,8 @@ dependencies {
     compile group: 'io.rest-assured', name: 'rest-assured', version: '4.3.0'
 
     compile group: 'net.masterthought', name: 'cucumber-reporting', version: '5.2.2'
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.10.3'
+    testCompile group: 'io.rest-assured', name: 'rest-assured', version: '4.3.0'
 
     implementation 'com.google.zxing:core:3.3.0'
     implementation 'com.google.zxing:javase:3.3.0'

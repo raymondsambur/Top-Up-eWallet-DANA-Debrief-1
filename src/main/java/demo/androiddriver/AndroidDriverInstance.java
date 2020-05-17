@@ -22,7 +22,7 @@ public class AndroidDriverInstance {
         caps.setCapability("udid", "emulator-5554");
         caps.setCapability("autoGrantPermissions", true);
         caps.setCapability("app",
-                System.getProperty("user.dir") + File.separator + "APP" + File.separator + "app-debug-v8.apk");
+                System.getProperty("user.dir") + File.separator + "APP" + File.separator + "app-debug-v9.apk");
         caps.setCapability("automationName", "UiAutomator2");
         try {
             androidDriver = new AndroidDriver<>(new URL(appiumUrl), caps);

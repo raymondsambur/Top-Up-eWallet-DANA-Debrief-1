@@ -37,5 +37,10 @@ public class Verification implements VerificationLocator {
         return pageFunctions.waitABit(LABEL_PHONE_EMAIL).getText();
     }
 
+    public boolean isOnEmailVerificationPage(){ return pageFunctions.waitABit(LABEL_TITLE_FORGOT_PASSWORD).isDisplayed(); }
+
+    public void inputEmail(String email){ androidDriver.findElement(TEXT_FIELD_EMAIL).sendKeys(email); }
+
+    public void clickVerifyButton(){ androidDriver.findElement(BUTTON_VERIFY).click(); }
 
 }
