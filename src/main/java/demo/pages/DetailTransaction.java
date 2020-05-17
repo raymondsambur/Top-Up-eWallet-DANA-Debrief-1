@@ -81,7 +81,7 @@ public class DetailTransaction implements DetailTransactionLocator {
     }
 
     public void clickBackQR() {
-        androidDriver.findElement(BUTTON_QR_BACK);
+        androidDriver.findElement(BUTTON_QR_BACK).click();
     }
 
     public boolean isOnReceiptPage() {
@@ -89,35 +89,35 @@ public class DetailTransaction implements DetailTransactionLocator {
     }
 
     public void clickUploadReceiptBackButton() {
-        androidDriver.findElement(BUTTON_UPLOAD_RECEIPT_BACK);
+        androidDriver.findElement(BUTTON_UPLOAD_RECEIPT_BACK).click();
     }
 
     public void clickConfirmUploadButton() {
-        androidDriver.findElement(BUTTON_CONFIRM_UPLOAD);
+        androidDriver.findElement(BUTTON_CONFIRM_UPLOAD).click();
     }
 
     public void clickTakeFromCameraButton() {
-        androidDriver.findElement(BUTTON_TAKE_FROM_CAMERA);
+        androidDriver.findElement(BUTTON_TAKE_FROM_CAMERA).click();
     }
 
     public void clickChooseFromGalleryButton() {
-        androidDriver.findElement(BUTTON_CHOOSE_FROM_GALLERY);
+        androidDriver.findElement(BUTTON_CHOOSE_FROM_GALLERY).click();
     }
 
     public void clickTakePhotoButton() {
-        androidDriver.findElement(BUTTON_TAKE_PHOTO);
+        androidDriver.findElement(BUTTON_TAKE_PHOTO).click();
     }
 
     public void clickTakePhotoBackButton() {
-        androidDriver.findElement(BUTTON_TAKE_PHOTO_BACK);
+        androidDriver.findElement(BUTTON_TAKE_PHOTO_BACK).click();
     }
 
     public void clickChooseFileConfirmButton() {
-        androidDriver.findElement(BUTTON_CHOOSE_FILE_CONFIRM);
+        androidDriver.findElement(BUTTON_CHOOSE_FILE_CONFIRM).click();
     }
 
     public void clickChooseFileCancelButton() {
-        androidDriver.findElement(BUTTON_CHOOSE_FILE_CANCEL);
+        androidDriver.findElement(BUTTON_CHOOSE_FILE_CANCEL).click();
     }
 
     public void clickImageButtonTakePhoto(){

@@ -16,14 +16,14 @@
       And User click Select Payment Method button on Top Up Page
       And User is on Choose Payment Method Page
       And User is on Choose Payment Method Page
-      And User choose "BRI" as Payment Method
+      And User choose "BCA" as Payment Method
       And User click Pay button on Choose Payment Type Page
       And User is on Detail Transaction Page
-      Then User see transaction Top Up amount as "100.000"
+      Then User see transaction Top Up amount as "Rp.100.000"
       And User see transaction Status is "Pending"
       And User see transaction date
       And User see transaction payment method is "Bank Transfer"
-      And User see transaction payment name is "BRI"
+      And User see transaction payment name is "BCA"
       And User see transaction validity timer
 
     @VerifyTransactionWithBankTakeFromCamera
@@ -33,7 +33,7 @@
       And User click Select Payment Method button on Top Up Page
       And User is on Choose Payment Method Page
       And User is on Choose Payment Method Page
-      And User choose "BRI" as Payment Method
+      And User choose "BCA" as Payment Method
       And User click Pay button on Choose Payment Type Page
       When User is on Detail Transaction Page
       And User click confirm button on Detail Transaction Page

@@ -23,5 +23,5 @@ Feature: Choose Payment Method
     Then User is on Detail Transaction Page
     Examples:
       | PaymentName |
-      | BRI         |
+      | BCA         |
       | Indomaret   |

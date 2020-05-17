@@ -7,8 +7,8 @@ public interface DetailTransactionLocator {
 
     By LABEL_TITLE_DETAIL_TRANSACTION = MobileBy.xpath("//android.widget.TextView[@text='Detail Transaction']");
     By BUTTON_BACK = MobileBy.xpath("//android.widget.ImageButton");
-    By BUTTON_LEAVE_NO = MobileBy.id("button2");
-    By BUTTON_LEAVE_YES = MobileBy.id("button1");
+    By BUTTON_LEAVE_NO = MobileBy.id("//android.widget.Button[1]");
+    By BUTTON_LEAVE_YES = MobileBy.id("//android.widget.Button[2]");
 
     //Payment Information
     By LABEL_BALANCE_AMOUNT = MobileBy.id("tv_balance");
@@ -38,6 +38,6 @@ public interface DetailTransactionLocator {
     By BUTTON_CHOOSE_FROM_GALLERY = MobileBy.id("tv_gallery");
     By BUTTON_TAKE_PHOTO = MobileBy.id("img_take_photo");
     By BUTTON_TAKE_PHOTO_BACK = MobileBy.xpath("//android.widget.ImageButton");
-    By BUTTON_CHOOSE_FILE_CONFIRM = MobileBy.id("button1");
-    By BUTTON_CHOOSE_FILE_CANCEL = MobileBy.id("button2");
+    By BUTTON_CHOOSE_FILE_CONFIRM = MobileBy.xpath("//android.widget.Button[2]");
+    By BUTTON_CHOOSE_FILE_CANCEL = MobileBy.xpath("//android.widget.Button[1]");
 }
